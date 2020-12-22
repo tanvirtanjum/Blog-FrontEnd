@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <title>Details</title>
+
+        <script type="text/javascript" src="js/jquery-3.5.1.js"> </script>
+        <script type="text/javascript" src="js/details.js"></script>
+        <script type="text/javascript" src="js/logout.js"> </script>
+    </head>
+    <body>
+        <form method="">
+            <div style="width: 100%;" align="right">
+                <input type="button" id="logout" value="LOGOUT">
+            </div>
+            <div style="width: 100%;" align="middle">
+                <input type="button" id="update" value="UPDATE">
+                <input type="button" id="delete" value="DELETE">
+                <br>
+                <textarea id="text" cols="80" rows="20" placeholder="Write your blogs here..." style="width:100%;overflow:auto;resize:none"></textarea>   
+            </div>
+            <hr>
+            <div style="width: 100%; height: 48.5%; overflow: scroll;" align="center"> 
+                <table id = "comments" border="1" style="width: 60%;">
+                    <caption>
+                        Comments <br>
+                        <input type="search" id="author" placeholder="Search Comment By Author" style="width: 50%; border-radius: 12px; text-align: center; height: 35px;"> <br><br>
+                        <hr><input type="search" id="comment_text" placeholder="Write your comment..." style="width: 40%; border-radius: 12px; text-align: center; height: 35px;">
+                        <input type="button" id="comment" value="COMMENT"><hr>
+                    </caption>
+                    <thead>
+                        <th>Commented By</th>
+                        <th>Comment</th>
+                        <th></th>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+        </form>
+    </body>
+</html>

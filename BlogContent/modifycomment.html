@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <title>Modify Comment</title>
+
+        <script type="text/javascript" src="js/jquery-3.5.1.js"> </script>
+        <script type="text/javascript" src="js/modifycomment.js"></script>
+        <script type="text/javascript" src="js/logout.js"> </script>
+    </head>
+    <body>
+        <form method="">
+            <div style="width: 100%;" align="right">
+                <input type="button" id="logout" value="LOGOUT">
+            </div>
+            <div style="width: 100%;" align="middle">
+                <textarea id="text" cols="80" rows="20" placeholder="Write your blogs here..." style="width:100%;overflow:auto;resize:none" readonly></textarea>   
+            </div>
+            <hr>
+            <div style="width: 100%; height: 42%;" align="center"> 
+                <table id = "comments" border="1" style="width: 60%;">
+                    <caption>
+                        Modify Comment  
+                    </caption>
+                    <tbody>
+                        <tr>
+                            <td colspan="2" align="center">Commented By:&nbsp; <span id="sender" style="color: cornflowerblue;"></span></td>
+                        </tr>
+                        <tr>
+                            <th colspan="2" align="center"><textarea id="comment" cols="40" rows="20" style="width:100%;overflow:auto;resize:none"></textarea></th>
+                        </tr>
+                        <tr>
+                            <td align="center"><input type="button" id="update" value="UPDATE"></td>
+                            <td align="center"><input type="button" id="delete" value="DELETE"></td>
+                        </tr>
+                        
+                    </tbody>
+                </table>
+            </div>
+        </form>
+    </body>
+</html>
